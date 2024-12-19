@@ -1,9 +1,22 @@
+
+
+
+
+
+/* General Styles */
 body {
-  background-color:#f5f1da;
+    background-color:#f5f1da;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
-
-h1, h3 {color:#00416d;}
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
 
 hr {
 border-style: dotted none none;
@@ -11,4 +24,64 @@ border-color:#f8bd7f;
 border-width:5px;
 height: 0;
 width: 10%;
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+thead {
+    background-color: #f4f4f4;
+}
+
+/* Skills Section */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills table {
+    width: 45%;
+    margin-bottom: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .profile {
+        flex-direction: column;
+    }
+
+    .skills table {
+        width: 100%;
+    }
 }
