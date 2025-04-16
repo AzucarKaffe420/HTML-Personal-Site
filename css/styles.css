@@ -1,0 +1,73 @@
+body {
+  font-family: 'Archivo', sans-serif;
+  margin: 0;
+  background: #f8f6f2;
+  color: #111;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.navbar nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+
+.carousel-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  gap: 2rem;
+}
+
+.carousel {
+  overflow: hidden;
+  width: 40%;
+}
+
+.embla__container {
+  display: flex;
+}
+
+.embla__slide {
+  flex: 0 0 100%;
+}
+
+.embla__slide img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.page-content {
+  padding: 3rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 12px;
+}
