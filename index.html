@@ -1,77 +1,50 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="About Steven Hernandez">
-  <meta name="keywords" content="web developer,journalist, user experience">
-  <meta name="author" content="Steven Hernandez">
-  <link rel="stylesheet" href="css/styles.css">
-  <title>About me</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Steven Hernandez — Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <div class="container">
-    <div class="profile">
-      <img src="images/steven_profileimage.png" alt="Steven profile image">
-      <h1>Steven Hernandez</h1>
-      <p><em>Founder of Hdz.co Design Studio</em></p>
-      <p><em>Journalist and Web-Developer</em></p>
-      <p><em>Phoenix, AZ 85015</em></p>
-      <p>I am currently freelancing as a journalist and web developer. My work entails crafting seamless design systems for individuals and business clients alike. My written work has been featured in <a href="https://www.bizjournals.com/phoenix/newssearch/results/_author/Steven+Hernandez?market=phoenix&q=steven+hernandez" target="_blank">The Phoenix Business Journal</a> as well as Arizona State University's campus newspapers, <a href="https://www.statepress.com/staff/steven-hernandez#" target="_blank">The State Press</a>, and <a href="https://downtowndevil.com/author/shernandez/" target="_blank">Downtown Devil</a>.</p>
-    </div>
-    <hr>
-    <h3>Education</h3>
-    <ul>
-      <li>Walter Cronkite School of Journalism and Mass Communication, Phoenix, Arizona.<br>B.A. in Journalism(2017-2021)<p>-Pursuing a visual track that focuses on the development of storytelling through writing, design, cinematography with new and emerging technologies. Wrote stories about gentrification, technology and their impacts on society-at-large. In 2016 as part of election season, I was part of ProPublica’s “Electionland”, a collaborative journalism project that covered voting access, cybersecurity, misinformation and election integrity.</p></li>
-      <li>Glendale Community College, Glendale, Arizona.<br>Associate of Arts in Communication(2013-2017)<p>-Leveraged small-group communications strengths to stand out and be promoted to the sports editor position for the campus paper’s print/digital publications. Managed a 4-to-6-person multimedia team. Helped leadership craft a guide of digital best practices for incoming journalists.</p></li>
-    </ul>
-    <hr>
-    <h3>Work Experience</h3>
-    <table class="work-experience">
-      <thead>
-        <tr>
-          <th>Dates</th>
-          <th>Work</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>2019-2021</td>
-          <td>Freelance Developer</td>
-        </tr>
-      </tbody>
-    </table>
-    <hr>
-    <h3>Professional Toolkit</h3>
-    <h3>Skills</h3>
-    <div class="skills">
-      <table>
-        <tr>
-          <td>HTML</td>
-          <td>★★★★☆</td>
-        </tr>
-        <tr>
-          <td>CSS</td>
-          <td>★★★☆☆</td>
-        </tr>
-      </table>
-      <table>
-        <tr>
-          <td>Indesign</td>
-          <td>★★★★☆</td>
-        </tr>
-        <tr>
-          <td>Figma</td>
-          <td>★★★☆☆</td>
-        </tr>
-      </table>
-    </div>
-    <hr>
-    <a href="hobbies.html"><h3>My Hobbies</h3></a>
-    <a href="contact.html">Let's Work Together!</a>
-  </div>
-</body>
+  <header class="navbar">
+    <div class="location">PHOENIX, AZ</div>
+    <div class="time" id="time">00:00</div>
+    <div class="logo">STEVEN HERNANDEZ</div>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
+  <main class="carousel-section">
+    <div class="tagline-left">
+      <h2>STRATEGIC THINKING.</h2>
+      <p>Design. Journalism. Direction.</p>
+    </div>
+
+    <div class="carousel" id="carousel">
+      <div class="slide"><img src="assets/img1.jpg" alt="Slide 1" /></div>
+      <div class="slide"><img src="assets/img2.jpg" alt="Slide 2" /></div>
+      <div class="slide"><img src="assets/img3.jpg" alt="Slide 3" /></div>
+    </div>
+
+    <div class="tagline-right">
+      <h2>BOLD EXECUTION.</h2>
+      <p>Creative Strategy. Web Experience.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-text">
+      &copy; 2025 — Last update: April 2025 — <a href="https://instagram.com/yourhandle">Instagram</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/embla-carousel/embla-carousel.umd.js"></script>
+  <script src="js/main.js"></script>
+</body>
 </html>
