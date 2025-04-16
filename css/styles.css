@@ -1,87 +1,60 @@
-
-
-
-
-
-/* General Styles */
 body {
-    background-color:#f5f1da;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
+  font-family: 'Archivo', sans-serif;
+  margin: 0;
+  background: #f8f6f2;
+  color: #111;
 }
 
-.container {
-    width: 90%;
-    margin: auto;
-    overflow: hidden;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-size: 14px;
 }
 
-hr {
-border-style: dotted none none;
-border-color:#f8bd7f;
-border-width:5px;
-height: 0;
-width: 10%;
+.navbar nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
 }
 
-/* Profile Section */
-.profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 20px;
+.carousel-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 3rem 0;
 }
 
-.profile img {
-    max-width: 150px;
-    border-radius: 50%;
-    margin-bottom: 10px;
+.tagline-left, .tagline-right {
+  width: 20%;
+  font-weight: 600;
+  text-align: center;
 }
 
-/* Table Styles */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
+.carousel {
+  display: flex;
+  overflow: hidden;
+  width: 40%;
+  gap: 2rem;
 }
 
-th, td {
-    padding: 10px;
-    text-align: left;
-    border: 1px solid #ddd;
+.slide {
+  flex: 0 0 100%;
+  transition: transform 0.4s ease;
 }
 
-thead {
-    background-color: #f4f4f4;
+.slide img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
 }
 
-/* Skills Section */
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.skills table {
-    width: 45%;
-    margin-bottom: 10px;
-}
-
-/* Media Queries */
-@media (max-width: 600px) {
-    .container {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .profile {
-        flex-direction: column;
-    }
-
-    .skills table {
-        width: 100%;
-    }
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 12px;
 }
